@@ -2,7 +2,7 @@ import { useChatStore } from "../store/useChatStore.js";
 import BorderAnimatedContainer from "../components/BorderAnimatedContainer";
 import ActiveTabSwitch from "../components/ActiveTabSwitch.jsx";
 import ProfileHeader from "../components/ProfileHeader.jsx";
-import ChatList from "../components/ChatList.jsx";
+import ChatsList from "../components/ChatsList.jsx";
 import ContactList from "../components/ContactList.jsx";
 import ChatContainer from "../components/ChatContainer.jsx";
 import NoConversationPlaceholder from "../components/NoConversationPlaceholder.jsx";
@@ -19,7 +19,7 @@ const ChatPage = () => {
                     <ActiveTabSwitch />
 
                     <div className="flex-1 overflow-y-auto p-4 space-y-2">
-                        {activeTab === "chats" ? <ChatList /> : <ContactList />}
+                        {activeTab === "chats" ? <ChatsList /> : <ContactList />}
                     </div>
                 </div>
 
